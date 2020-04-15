@@ -1,4 +1,4 @@
-Xiaomi Custom Font Installer v3.0
+Xiaomi Custom Font Installer v3.1
 ----------------------------------
 Custom Font Installer for Xiaomi Devices
 =========================================
@@ -49,13 +49,19 @@ Everything is straight forward. You need just the Magisk Manager and your desire
 
 07-- Press Vol+ and then Vol- key (volume key programming).
 
-#First
+#First 
 08-- For font type selection,  press 'Vol+' to change types and 'Vol-' for OK
 	Type 1. - 'English+Bangla'(merged) font
 	Type 2. - 'Only English' font
 	Type 3. - 'Only Bangla' font
      (N.B.: No font will be installed if your selected type font folder remains empty or mismatch name!)
 
+#Second 
+09-- To use Regular font as Bolded font,  press: 'Vol+' key, otherwise press: 'Vol-' key.
+
+#Third 
+10-- Now if you want to delete the fonts from English & Bangla folders,  press: 'Vol+' key
+     and if you want to keep them,  press: 'Vol-' key.
 
 
 ---- Everything is done, Reboot now.

@@ -57,6 +57,27 @@ english() {
 	cp $EFONTDIR/BoldItalic.ttf $SYSTFONT/RobotoCondensed-BoldItalic.ttf;
 	###BlackItalic
 	cp $EFONTDIR/BlackItalic.ttf $SYSTFONT/RobotoCondensed-Regular.ttf;
+	###RegularOverBold
+	if [ $ROB -eq 1 ]; then
+		###Regular->Mediun
+		cp $EFONTDIR/Regular.ttf $SYSTFONT/GoogleSans-Medium.ttf;
+		cp $EFONTDIR/Regular.ttf $SYSTFONT/Roboto-Medium.ttf;
+		cp $EFONTDIR/Regular.ttf $SYSTFONT/RobotoCondensed-Medium.ttf;
+		###Regular->Bold
+		cp $EFONTDIR/Regular.ttf $SYSTFONT/GoogleSans-Bold.ttf;
+		cp $EFONTDIR/Regular.ttf $SYSTFONT/NotoSerif-Bold.ttf;
+		cp $EFONTDIR/Regular.ttf $SYSTFONT/Roboto-Bold.ttf;
+		cp $EFONTDIR/Regular.ttf $SYSTFONT/RobotoCondensed-Bold.ttf;
+		###Italic->MediumItalic
+		cp $EFONTDIR/Italic.ttf $SYSTFONT/GoogleSans-MediumItalic.ttf;
+		cp $EFONTDIR/Italic.ttf $SYSTFONT/Roboto-MediumItalic.ttf;
+		cp $EFONTDIR/Italic.ttf $SYSTFONT/RobotoCondensed-MediumItalic.ttf;
+		###Italic->BoldItalic
+		cp $EFONTDIR/Italic.ttf $SYSTFONT/GoogleSans-BoldItalic.ttf;
+		cp $EFONTDIR/Italic.ttf $SYSTFONT/NotoSerif-BoldItalic.ttf;
+		cp $EFONTDIR/Italic.ttf $SYSTFONT/Roboto-BoldItalic.ttf;
+		cp $EFONTDIR/Italic.ttf $SYSTFONT/RobotoCondensed-BoldItalic.ttf;
+	fi
 }
 
 bangla() {
@@ -76,11 +97,28 @@ bangla() {
 	cp $BFONTDIR/Bold.ttf $SYSTFONT/NotoSerifBengali-Bold.ttf;
 	cp $BFONTDIR/Bold.ttf $SYSTFONT/NotoSansBengali-Bold.otf;
 	cp $BFONTDIR/Bold.ttf $SYSTFONT/NotoSansBengaliUI-Bold.otf;
+	###RegularOverBold
+	if [ $ROB -eq 1 ]; then
+		###Regular->Mediun
+		cp $BFONTDIR/Regular.ttf $SYSTFONT/NotoSansBengali-Medium.otf;
+		cp $BFONTDIR/Regular.ttf $SYSTFONT/NotoSansBengaliUI-Medium.otf;
+		###Regular->Bold
+		cp $BFONTDIR/Regular.ttf $SYSTFONT/NotoSansBengali-Bold.ttf;
+		cp $BFONTDIR/Regular.ttf $SYSTFONT/NotoSansBengaliUI-Bold.ttf;
+		cp $BFONTDIR/Regular.ttf $SYSTFONT/NotoSerifBengali-Bold.ttf;
+		cp $BFONTDIR/Regular.ttf $SYSTFONT/NotoSansBengali-Bold.otf;
+		cp $BFONTDIR/Regular.ttf $SYSTFONT/NotoSansBengaliUI-Bold.otf;
+	fi
 }
 
 merged() {
 	english; 
 	bangla;
+}
+
+delete() {
+	rm -rf $EFONTDIR/*ttf;
+	rm -rf $BFONTDIR/*ttf;
 }
 
 ### SELECTIONS ###
@@ -112,6 +150,38 @@ done
 ui_print "   "
 ui_print "  Selected Font Type: $LANG"
 
+##RegularOverBold
+ROB=0
+ui_print "   "
+ui_print "- Do you want to install 'Regular' font as 'Bold' font ??"
+ui_print "  (Regular fonts will be installed over Bolded fonts.)"
+ui_print "   "
+ui_print "  Vol+ = Yes; Vol- = No"
+ui_print "   "
+if $VKSEL; then
+	ROB=1
+	ui_print "  You select: Yes"
+else
+	ui_print "  You select: No"
+fi
+
+###Delete
+DLT=1
+ui_print "   "
+ui_print "- Do you want to remove fonts from En & Bn folders ??"
+ui_print "  (NOTE: Be careful! All the .ttf files from "
+ui_print "   English & Bangla folders will be deleted! "
+ui_print "   Don't worry! Other any files won't be affected.)"
+ui_print "   "
+ui_print "  Vol+ = Yes; Vol- = No"
+ui_print "   "
+if $VKSEL; then
+	DLT=true
+	ui_print "  You select: Yes"
+else
+	ui_print "  You select: No"
+fi
+
 ### INSTALLATION ###
 ui_print "  "
 ui_print "- Installing Fonts..."
@@ -123,5 +193,11 @@ case $LANG in
 	2) english;	sed -ie 3's/$/-(En)  by S.A.Sohan&/' $MODPROP;;
 	3) bangla;	sed -ie 3's/$/-(Bn)  by S.A.Sohan&' $MODPROP;;
 esac
+
+### CLEAN UP ###
+if $DLT; then
+	ui_print "- Clearing folders..."
+	delete;
+fi
 
 ui_print "   "

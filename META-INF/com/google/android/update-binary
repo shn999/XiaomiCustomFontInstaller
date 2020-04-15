@@ -40,7 +40,7 @@ print_modname() {
   ui_print " "
   ui_print "+ + + + + + + + + + + + + + + + + + + + + +"
   ui_print "+      Xiaomi Custom Font Installer       +"
-  ui_print "+       MagiskModule version: v3.0        +"
+  ui_print "+       MagiskModule version: v3.1        +"
   ui_print "+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~       +"
   ui_print "+             By  S A Sohan               +"
   ui_print "+          https://t.me/sashn9            +"

@@ -37,7 +37,7 @@ english() {
 	###Black
 	cp $EFONTDIR/Black.ttf $SYSTFONT/Roboto-Black.ttf;
 	###ThinItalic
-	cp $EFONTDIR/ThinItalic.ttf $SYSTFONT/RobotoCondensed-Italic.ttf;
+	cp $EFONTDIR/ThinItalic.ttf $SYSTFONT/Roboto-ThinItalic.ttf;
 	###LightItalic
 	cp $EFONTDIR/LightItalic.ttf $SYSTFONT/Roboto-LightItalic.ttf;
 	cp $EFONTDIR/LightItalic.ttf $SYSTFONT/RobotoCondensed-LightItalic.ttf;
@@ -56,7 +56,9 @@ english() {
 	cp $EFONTDIR/BoldItalic.ttf $SYSTFONT/Roboto-BoldItalic.ttf;
 	cp $EFONTDIR/BoldItalic.ttf $SYSTFONT/RobotoCondensed-BoldItalic.ttf;
 	###BlackItalic
-	cp $EFONTDIR/BlackItalic.ttf $SYSTFONT/RobotoCondensed-Regular.ttf;
+	cp $EFONTDIR/BlackItalic.ttf $SYSTFONT/Roboto-BlackItalic.ttf;
+	###MiLanPro
+	cp $EFONTDIR/Regular.ttf $SYSTFONT/MiLanProVF.ttf;
 	###RegularOverBold
 	if [ $ROB -eq 1 ]; then
 		###Regular->Mediun

@@ -3,7 +3,7 @@
 *শাওমি ডিভাইসগুলির জন্য কাস্টম ফন্ট ইনস্টলার*
 =========================================
 
-এই মডিউলটি আপনাকে আপনার অ্যান্ড্রয়েড শাওমি ডিভাইসে (মিউই- ৯,১০,১১,১২; অ্যান্ড্রয়েড- ৭,৮,৯,১০) ইংরেজি এবং বাংলা ফন্টগুলি (একত্রিত বা পৃথকভাবে) ইনস্টল করতে সহায়তা করবে।
+এই মডিউলটি আপনাকে আপনার অ্যান্ড্রয়েড শাওমি ডিভাইসে (মিউই- ৯,১০,১১,১২; অ্যান্ড্রয়েড- ৭,৮,৯,১০) **ইংরেজি** এবং **বাংলা** ফন্ট (একত্রিত বা পৃথকভাবে) ইনস্টল করতে সহায়তা করবে।
  
 
 
@@ -11,10 +11,10 @@
 সিস্টেম ফন্ট না হারিয়ে অনেক সহজ পদ্ধতিতে কাস্টম ফন্ট ইনিস্টল করুন!
 
 ## ব্যবহার
-আপনার দরকার কেবল Magisk Manager ম্যানেজার এবং আপনার পছন্দসই ইংরেজি এবং/অথবা বাংলা (অবশ্যই ইউনিকোড হতে হবে) ".ttf" ফন্ট।
+আপনার দরকার কেবল Magisk Manager ম্যানেজার এবং আপনার পছন্দসই ইংরেজি এবং/অথবা বাংলা (অবশ্যই ইউনিকোড হতে হবে) ".ttf" ফাইল ফন্ট।
 
 
->>>> ধাপে ধাপে অনুসরণ করুন:
+>>>> এবার ধাপে ধাপে অনুসরণ করুন:
 
 - 01. ইন্টার্নাল স্টোরেজে ``XiaomiFontInstaller`` নামে একটি ফোল্ডার ক্রিয়েট করুন।
 
@@ -49,7 +49,7 @@
 
 - 07. ভলিউম(+) বাটন টিপুন এবং তারপরে ভলিউম(-) বাটন টিপুন (volume key programming)।
 
-#প্রথম
+_#প্রথম_কনফিগারেশন#_
 - 08. ফন্টের ধরণের নির্বাচনের জন্য, টাইপ পরিবর্তন করতে 'Vol+' এবং সিলেক্ট বা OK এর জন্য 'Vol-' বাটন চাপুন।
 	```
 	টাইপ 1 - 'ইংরেজি + বাংলা' (মার্জড/একত্রিত) ফন্ট
@@ -58,7 +58,7 @@
 	```
     (নোটঃ আপনার নির্বাচিত প্রকারের ফন্ট ফোল্ডারটি ফাঁকা থাকলে অথবা ফন্টের নাম না মিললে কোনও ফন্ট ইনস্টল হবে না!)
 
-#দ্বিতীয়
+_#দ্বিতীয়_কনফিগারেশন#_
 - 09. 'Regular' ফন্টটি 'Bold' ফন্ট হিসাবেও ব্যবহার (বোল্ডড ফন্টের স্থানেও রেগুলার ফন্ট ইনস্টল হবে) করতে চাইলে, 'Vol+' বাটন, অন্যথায়: 'Vol-' বাটন চাপুন।
 
 
@@ -91,7 +91,7 @@
 *Custom Font Installer for Xiaomi Devices*
 ========================================
 
-This module can help you to install English and Bangla fonts (merged or separately) on your android Xiaomi devices (Miui- 9,10,11,12; Android- 7,8,9,10).
+This module can help you to install **English** and **Bangla** fonts (merged or separately) on your android Xiaomi devices (Miui- 9,10,11,12; Android- 7,8,9,10).
  
 
 
@@ -102,7 +102,7 @@ Apply custom fonts in the easiest way without losing system fonts!
 You need just the Magisk Manager and your desired English and/or Bangla (must be unicode) ".ttf" font(s).  
 
 
->>>> Do the followings, step by step:
+>>>> Now do the followings, step by step:
 
 - 01. Create a folder named by ``XiaomiFontInstaller`` in the internal storage.
 
@@ -137,7 +137,7 @@ You need just the Magisk Manager and your desired English and/or Bangla (must be
 
 - 07. Press Vol+ and then Vol- key (volume key programming).
 
-#First 
+_#First_Configuration#_
 - 08. For font type selection,  press 'Vol+' to change types and 'Vol-' for OK
 	```
 	Type 1. - 'English+Bangla'(merged) font
@@ -146,7 +146,7 @@ You need just the Magisk Manager and your desired English and/or Bangla (must be
 	```
     (N.B.: No font will be installed if your selected type font folder remains empty or mismatch name!)
 
-#Second 
+_#Second_Configuration#_
 - 09. To use Regular font also as Bolded font (Regular fonts will be installed over Bolded fonts, too),  press: 'Vol+' key, otherwise press: 'Vol-' key.
 
 

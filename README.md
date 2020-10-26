@@ -71,7 +71,7 @@
 #নোটঃ
 - ফন্ট হিন্টসঃ চিকন/পাতলা হতে ক্রমান্বয়ে মোটা অক্ষরঃ  Thin > Light > Regular > Medium > Bold > Black ;  এবং Italic ফন্ট সামান্য কিছুটা বাঁকা।
 - আপনি যদি কেবলমাত্র ইংলিশ কিংবা কেবলমাত্র বাংলা ফন্ট ইনস্টল করতে চান, তবে সেই ফন্ট ফাইলগুলি নির্দিষ্ট ফোল্ডারে রাখবেন।
-- আপনার কাছে ফন্ট ফ্যামিলির সবগুলি ফন্ট (ইংরেজি-১২টি, বাংলা-৩টি) না থাকলে শুধু মেইন মেইন ফন্ট (ইংরেজিঃ Regular, _Italic_, **Bold**, **_BoldItalic_**; এবং বাংলাঃ Regular, *Bold*) গুলো ব্যবহার করতে পারেন।
+- আপনার কাছে ফন্ট ফ্যামিলির সবগুলি ফন্ট (ইংরেজি-১২টি, বাংলা-৩টি) না থাকলে শুধু মেইন মেইন ফন্ট (ইংরেজিঃ Regular, _Italic_, **Bold**, **_BoldItalic_**; এবং বাংলাঃ Regular, **Bold**) গুলো ব্যবহার করতে পারেন।
 - কিন্তু যদি সেগুলি ফন্টও না থাকে (যেটা নাই সেটা বাদ দিতে পারেন), সেক্ষেত্রে শুধুমাত্র Regular (যা সর্বদা অ্যাভেইলঅ্যাবল) ফন্ট ফাইলটি English / Bangla ফন্ট ফোল্ডারে রেখে তা ইনিস্টল করতে পারবেন।
 
 
@@ -159,7 +159,7 @@ Once you have applied fonts with this “XCFI” module, if you wanna apply anot
 #Note:
 - Font hints: From thinner weight to gradually thicker/bolded letter:  Thin > Light > Regular > Medium > Bold > Black ;  and Italic fonts are slightly angled.
 - If you want to install only English or only Bangla font, then just put those font files into the specific folder.
-- If you do not have all the fonts of the font family (English-12, Bengali-3), you can use only the main fonts (For English: Regular, _Italic_, *Bold*, *_BoldItalic_*; and for Bengali: Regular, *Bold*).
+- If you do not have all the fonts of the font family (English-12, Bengali-3), you can use only the main fonts (For English: Regular, _Italic_, **Bold**, **_BoldItalic_**; and for Bengali: Regular, **Bold**).
 - But if you also do not have those fonts (you can omit what you do not have), then you can only install the Regular font file (which is always available) into the English / Bangla font folder.
 
 
@@ -178,7 +178,7 @@ Once you have applied fonts with this “XCFI” module, if you wanna apply anot
 এখানে [স্ক্রীনশট সহ ইনিস্ট্রাকশন](https://telegra.ph/Xiaomi-Custom-Font-Installer-10-25) পাবেন।
 
 ####
-For any issue, contact: [S A Sohan](https://t.me/sashn9bot)
+**_For any issue, contact: [S A Sohan](https://t.me/sashn9bot)_**
 
 #### Thanks to
 - [Magisk](https://github.com/topjohnwu/Magisk)

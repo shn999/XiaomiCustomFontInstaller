@@ -1,8 +1,8 @@
-id=XCFI
+id=XCFI_by_SAS
 name=Xiaomi Custom Font Installer
-version=v3.0
-versionCode=30
+version=v3.2.0
+versionCode=32
 author=Me! 😎
-description=Systemlessly replace your android xiaomi device font at the easiest way! Should work on MiUI 9~11 with android version 5~10.
-support=https://t.me/sashn9
+description=Replace your android xiaomi device font in the easiest way without losing system fonts! Should work on MiUI 9~12 with android version 5~10.
+support=https://t.me/sashn9bot
 minMagisk=1900

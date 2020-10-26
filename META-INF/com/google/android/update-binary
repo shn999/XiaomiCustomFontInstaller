@@ -34,17 +34,17 @@ print_modname() {
   len=$((len + 2))
   local pounds=`printf "%${len}s" | tr ' ' '*'`
   ui_print " "
-  ui_print "$pounds"
+  ui_print "$pounds*"
   ui_print " $MODNAME "
-  ui_print "$pounds"
+  ui_print "$pounds*"
   ui_print " "
-  ui_print "+ + + + + + + + + + + + + + + + + + + + + +"
-  ui_print "+      Xiaomi Custom Font Installer       +"
-  ui_print "+       MagiskModule version: v3.1        +"
-  ui_print "+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~       +"
-  ui_print "+             By  S A Sohan               +"
-  ui_print "+          https://t.me/sashn9            +"
-  ui_print "+ + + + + + + + + + + + + + + + + + + + + +"
+  ui_print " + --------------------------------------- + "
+  ui_print " |      Xiaomi Custom Font Installer       | "
+  ui_print " |      MagiskModule version: v3.2.0       | "
+  ui_print " |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~      | "
+  ui_print " |             By  S A Sohan               | "
+  ui_print " |          https://t.me/sashn9            | "
+  ui_print " + --------------------------------------- + "
   ui_print " "
 }
 
@@ -176,5 +176,7 @@ cd /
 $BOOTMODE || recovery_cleanup
 rm -rf $TMPDIR
 
-ui_print "- Done"
+ui_print "- Installation completed!"
+ui_print "- Reboot your device to apply changes."
+ui_print "  "
 exit 0
